@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO ECOMMERCE WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      
+        body{
+            background-color: #efe2a4d2;
+        }
+        p{
+          display: inline-block;
+          font-size: 2rem;
+          /* margin: 2rem; */
+          position: relative;
+          padding: 1rem;
+          font-weight: bolder;
+          color:#1a4711fe ;
+        }
+        .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 90vh;
+          align-items: center;
+          
+          }
+          #title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            color: #1a4711fe;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+          .btn{
+            background-color: #1a4711fe;
+            color: #fff;
+            width: 20em;
+            border-radius: 20px;
+            height: 4vh;
+          }
+          .advts{
+            background: url("https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            position: relative;
+            background-size: cover;
+            /* background-size: 100% 100%; */
+            color: #fff;
+
+          }
+          .advts:hover{
+            border-radius: 1px;
+            background-color: #1a4711fe;
+            transition: transform 0.5s;
+          }
+         .para{
+          background-color: #1a471180;
+         }
+         
+        .inputdetails{
+           display: flex;
+           flex-direction: column;
+          margin: 10px;
+          font-size: 1.1rem;
+
+         }
+         .form-label::after{
+          display: block;
+          content: '';
+          height: 1px;
+          width:100%;
+          background-color: #07140589;
+         }
+         .form-label{
+          width: 100%;
+          height: 20px;
+         }
+         .form-control{
+          background-color: #efe2a400;
+          border: 0px;
+          width: 100%;
+          margin-top: 5px;
+         }
+         .form-control:hover{
+          width: 100%;
+          height: 30px;
+          background-color: #1a471180;
+          color: #fff;
+          border-radius: 20px;
+         }
+         .fpass{
+          text-align: end;
+        }
+        .fpass a{
+          text-decoration: none;
+          color: #1a4711b3;
+          font-style: italic;
+        }
+        .sign{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1rem;
+        }
+        .sign button{
+          height: 50px;
+           font-size: 1rem;
+           border-style: none;
+           background-color: #efe2a400;
+           padding: 1rem;
+         }.sign button:hover{
+          background-color: #1a471180;
+          color: #fff;
+          border-radius: 20px;
+         }
+        @media only screen and (min-width: 800px){
+          .box{
+            display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           margin: -1rem;
+          }
+          .container{
+           height: 90vh;
+           width: 50vw;
+           border-radius: 20px;
+          }
+
+        }
+    </style>
+</head>
+<body>
+  <p>
+    <i class="fa fa-shopping-cart" aria-hidden="true">E-BaZar
+    </i>
+  </p>
+  <section class="box">    
+    <div class="container">
+      <form class="form-table" action="login.php" method="post">
+          <div id="title">Login Here..</div>
+            <div class="inputdetails">  
+              <label class="form-label">Username</label>                  
+              <input type="text" name="uname" class="form-control"  id="">
+            </div>
+            <div class="inputdetails">     
+              <label class="form-label">Password</label>                
+              <input type="password" name="pass" class="form-control" id="">
+            </div>
+            <div class="inputdetails">
+              <label class="form-label">Confirm Password</label>                     
+              <input type="password" name="pass" class="form-control"  id="">
+              <div class="fpass"><a href="forget.php">Forget password?</a></div>
+            </div>                  
+            <button type="submit" class="btn">Submit</button>
+            <div class="sign">
+              <button class="fpass"><a href="signin.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign in</a></button>
+            </div>
+              </div>
+          </form>
+        <!-- <form action="signin.php" method="post">
+            <div class="userdetails">
+                <div class="inputdetails">
+                    <span class="detail">Full Name</span> 
+                    <input type="text" name="name" placeholder="enter your name" >
+                </div>
+            </div>
+            <div class="userdetails">
+                <div class="inputdetails">
+                    <span class="detail">Username</span> 
+                    <input type="text" name="uname" placeholder="enter your Username" >
+                </div>
+            </div>
+            
+            <div class="userdetails">
+                <div class="inputdetails">
+                    <span class="detail">Password</span> 
+                    <input type="text" name="pass" placeholder="enter your Password" >
+                </div>
+                <div class="userdetails">
+                    <div class="inputdetails">
+                    <select required name="utype" class="form-control mt-2">
+                        <option name="vendor" >vendor</option>
+                        <option name="customer">customer</option>
+                    </select>
+                    </div>
+                    <div class="text-centre mt-3">
+
+                        <button class="btn btn-primary">submit</button>
+                    </div>
+            </div>        
+        </form> -->
+    </div>
+    <div class="container advts ">
+         
+        </div>
+      
+    </div>
+  </section>
+</body>
+</html>
