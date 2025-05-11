@@ -9,8 +9,12 @@ $cipher_pass=md5($pass);
 
 include "../shared/connection.php";
 $sql="select * from signup where uname='$uname' and password='$cipher_pass'";
+echo md5('12345');
 
 $result = mysqli_query($con,$sql);
+print_r(($result));
+echo mysqli_num_rows($result);
+echo $sql;
 if(mysqli_num_rows($result)>0){
     echo "login successful";
    $dbrow=mysqli_fetch_assoc($result);

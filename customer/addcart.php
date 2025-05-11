@@ -9,7 +9,7 @@
 <body>   
 <?php
 session_start();  
-$pid=$_GET['pid'];
+$pid=$_POST['pid'];
 include "../shared/connection.php";
 $sql=mysqli_query($con,"insert into cart(userid,pid) values($_SESSION[userid],$pid)");
 if($sql){

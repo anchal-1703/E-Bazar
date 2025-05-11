@@ -110,7 +110,8 @@ cursor: pointer;
  <div class="display">
 
 <?php
-include "../shared/connection.php";$sql="select * from product";
+include "../shared/connection.php";
+$sql="select * from product";
 $result=mysqli_query($con,$sql);
 while($dbrow=mysqli_fetch_assoc($result)){  
     echo " 
@@ -123,7 +124,10 @@ while($dbrow=mysqli_fetch_assoc($result)){
     <div class='btn'>
     <input type='hidden' name='pname' value='$dbrow[name]'>
     <input type='hidden' name='pprice' value='$dbrow[price]'>
-   <a href='addcart.php?pid=$dbrow[pid]'><button type='submit' class='cart' name='addcart'>Add to Cart</button></a>
+      <input type='hidden' name='pid' value='$dbrow[pid]'>
+                  <button type='submit' class='cart' name='addcart'>Add to Cart</button>
+
+
     
     
     </div>
