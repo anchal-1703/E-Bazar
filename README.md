@@ -4,7 +4,7 @@
 This is a simple e-commerce web application built using **Core PHP**, **MySQL**, **HTML/CSS**, and **Bootstrap**. It supports user authentication, product listing, cart management, and order placement.
 
 ---
-![Homepage Screenshot](images/homepage.jpg)
+![Homepage Screenshot](images/homepage.png)
 
 
 **📄 [Project Documentation (PDF)](docs/project_view.pdf)**
